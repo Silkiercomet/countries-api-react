@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+:root{
+  /* dark mode*/
+  --DarkBlue : hsl(209, 23%, 22%);/*(Dark Mode Elements)*/
+  --VeryDarkBlue : hsl(207, 26%, 17%); /*(Dark Mode Background)*/
+  /* light mode*/
+  --VeryDarkBlack : hsl(200, 15%, 8%);/*(Light Mode Text)*/
+  --DarkGray : hsl(0, 0%, 52%);/*(Light Mode Input)*/
+  --VeryLightGray : hsl(0, 0%, 98%);/*(Light Mode Background)*/
+  
+  /*Dark Mode Text & Light Mode Elements*/
+  --White : hsl(0, 0%, 100%);
+}
+html{
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  box-sizing: inherit;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* dark */
+.dark {
+  color: var(--White);
+}
+.dark-bg{
+  background-color: var(--VeryDarkBlue);
+  height: 100%;
+  min-height: 100vh;
+}
+.dark-bg-element{
+  background-color: var(--DarkBlue);
+}
+/* dark */
+
+/* light */
+.light{
+  color: var(--VeryDarkBlack);
+}
+.light-bg{
+  background-color: var(--VeryLightGray);
+  height: 100%;
+  min-height: 100vh;
+}
+.light-bg-element{
+  background-color: var(--White);
+
+}
+/* light */
+.height{
+  height: 100%;
+  overflow-y: visible;
+}
+.center{
+  position: fixed;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+/*
+
+var Mod4 = new RegExp(
+  '\\[' +               // Number starts with [
+  '(\\+|\\-)?' +        // Optionally allow plus or minus sign at start
+  '0*' +                // Ignore leading zeroes
+  '(' +                 // Either:
+    '[048]|' +          // - Have only one digit, then it needs to be 0, 4 or 8
+    '\\d*(' +           // - Have two or more digits, then it needs to be either
+      '[02468][048]|' + //   - the second-to-last digit is even, followed by 0, 4 or 8
+      '[13579][26]' +   //   - the second-to-last digit is odd, followed by 2 or 6
+  '))' +                // Close either blocks
+  '\\]');               // Number ends with ]
+  
+*/

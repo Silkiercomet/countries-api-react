@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+
+
+    border-bottom: 3px solid transparent;
+}
+.dark_border{border-bottom: 3px solid var(--VeryDarkBlue);}
+.light_border{border-bottom: 3px solid var(--VeryLightGray);}
+
+.navbar h1{
+    font-weight: 800;
+}
+
+.navbar__theme_btn{
+    font-weight: 600;
+
+
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    border: none;
+    padding: 0.5rem;
+
+    background-color: transparent;
+    cursor: pointer;
+    
+}
